@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "Jost";
+    src: url("fonts/Jost/TrueType") format("truetype");
+    src: url("fonts/Jost/OpenType") format("opentype");
+
+    font-family: "Lora";
+    src: url("fonts/Lora/TrueType") format("truetype");
+}
+
+.header,
+h2,
+h3 {
+    font-family: 'Jost', Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+p,
+li {
+    font-family: 'Jost', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+ul {
+    display: table;
+    margin: 10 auto;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.text-center {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.crest {
+    width: 200px;
+    height: auto;
+    max-width: 300px;
+    min-width: 100px;
+    max-height: auto;
+}
+
+.feature {
+    width: 500px;
+    height: auto;
+}
+
+.side-image {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.side-text {
+    display: table;
+    margin: auto;
+    word-wrap: break-word;
+    width: auto;
+}
