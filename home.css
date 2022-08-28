@@ -7,13 +7,29 @@
     src: url("fonts/Lora/TrueType") format("truetype");
 }
 
-.header,
+html {
+    background-image: url(assets/images/nexus-blitz.jpg);
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+.header, .nav-links,
 h2,
 h3 {
     font-family: 'Jost', Arial, sans-serif;
     font-weight: bold;
     font-style: normal;
     line-height: 1.5;
+}
+
+hr {
+    border: 0.2px #000 solid;
+}
+
+nav {
+    margin-bottom: 20px;
 }
 
 p,
@@ -28,7 +44,32 @@ ul {
     margin: 10 auto;
 }
 
+.container {
+    display: table;
+    max-width: 1000px;
+    min-height: 600px;
+    width: auto;
+    height: auto;
+    overflow: auto;
+    border: 3px #000 solid;
+    background-color: rgb(178, 230, 198);
+}
+
+.navbar {
+    display: flex;
+    top: 0px;
+    background-color: white;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.intro {
+    max-width: 900px;
+    margin: 5px;
+}
+
 .center {
+    justify-content: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -42,26 +83,18 @@ ul {
 }
 
 .crest {
-    width: 200px;
+    width: auto;
     height: auto;
-    max-width: 300px;
-    min-width: 100px;
-    max-height: auto;
+    max-width: 150px;
 }
 
 .feature {
-    width: 500px;
+    width: 100%;
     height: auto;
 }
 
-.side-image {
-    display: inline-block;
-    vertical-align: top;
-}
-
-.side-text {
-    display: table;
-    margin: auto;
-    word-wrap: break-word;
-    width: auto;
+.intro-image {
+    max-width: 35%;
+    margin: 0 auto;
+    height: auto;
 }
