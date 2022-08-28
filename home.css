@@ -15,6 +15,11 @@ html {
     justify-content: center;
   }
 
+body {
+    width: 100%;
+    margin: 0px;
+}
+
 .header, .nav-links,
 h2,
 h3 {
@@ -44,6 +49,36 @@ ul {
     margin: 10 auto;
 }
 
+a {
+    font-family: 'Lora', Arial, sans-serif;
+    color: white;
+    padding: 0px 10px;
+    font-size: 18px;
+    font-weight: 750;
+}
+
+a:visited {
+    color: rgb(225, 99, 139);
+    padding: 0px 10px;
+}
+
+a:link {
+    font-family: 'Lora', Arial, sans-serif;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+
 .container {
     display: table;
     max-width: 1000px;
@@ -52,15 +87,15 @@ ul {
     height: auto;
     overflow: auto;
     border: 3px #000 solid;
-    background-color: rgb(178, 230, 198);
+    background-color: rgb(255, 255, 255, 0.8);
 }
 
 .navbar {
     display: flex;
     top: 0px;
-    background-color: white;
-    max-width: 1200px;
+    background-color: rgba(98, 85, 85, 0.5);
     width: 100%;
+    padding-top: 16px;
 }
 
 .intro {
