@@ -4,7 +4,7 @@
     src: url("/fonts/Jost/OpenType/") format("opentype");
 
     font-family: "Lora";
-    src: url("/fonts/Lora/TrueType/") format("truetype");
+    src: url("/fonts/Lora/TrueType/Lora-Regular.ttf") format("truetype");
 }
 
 /* background image */
@@ -20,6 +20,12 @@ html {
 body {
     width: 100%;
     margin: 0px;
+}
+
+h1 {
+    font-family: 'Lora', Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
 }
 
 .header, .nav-links,
@@ -51,7 +57,6 @@ ul {
     margin: 10 auto;
 }
 
-
 /* link styling */
 
 a {
@@ -68,6 +73,10 @@ a:visited {
     text-decoration: none;
 }
 
+a:visited:hover {
+    color: rgb(150, 67, 93);
+}
+
 a:link {
     font-family: 'Lora', Arial, sans-serif;
     text-decoration: none;
@@ -81,6 +90,8 @@ a:hover {
 a:active {
     text-decoration: underline;
 }
+
+/* border around content */
 
 .container {
     display: table;
