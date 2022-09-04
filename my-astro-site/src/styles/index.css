@@ -1,14 +1,16 @@
 @font-face {
     font-family: "Jost";
-    src: url("fonts/Jost/TrueType") format("truetype");
-    src: url("fonts/Jost/OpenType") format("opentype");
+    src: url("/fonts/Jost/TrueType/") format("truetype");
+    src: url("/fonts/Jost/OpenType/") format("opentype");
 
     font-family: "Lora";
-    src: url("fonts/Lora/TrueType") format("truetype");
+    src: url("/fonts/Lora/TrueType/") format("truetype");
 }
 
+/* background image */
+
 html {
-    background-image: url(assets/images/nexus-blitz.jpg);
+    background-image: url("/images/nexus-blitz.jpg");
     background-size: cover;
     width: 100%;
     display: flex;
@@ -49,6 +51,9 @@ ul {
     margin: 10 auto;
 }
 
+
+/* link styling */
+
 a {
     font-family: 'Lora', Arial, sans-serif;
     color: white;
@@ -60,6 +65,7 @@ a {
 a:visited {
     color: rgb(225, 99, 139);
     padding: 0px 10px;
+    text-decoration: none;
 }
 
 a:link {
@@ -67,17 +73,14 @@ a:link {
     text-decoration: none;
   }
   
-  a:visited {
-    text-decoration: none;
-  }
-  
-  a:hover {
+a:hover {
     text-decoration: underline;
-  }
+    color: rgb(255, 208, 208);
+}
   
-  a:active {
+a:active {
     text-decoration: underline;
-  }
+}
 
 .container {
     display: table;
@@ -132,4 +135,29 @@ a:link {
     max-width: 35%;
     margin: 0 auto;
     height: auto;
+}
+
+/* light and dark mode */
+
+.day   { background: #eee; color: black; }
+.night { background: #333; color: white; }
+
+@media (prefers-color-scheme: dark) {
+  .day.dark-scheme   { background:  #333; color: white; }
+  .night.dark-scheme { background: black; color:  #ddd; }
+  .container { background: rgba(0, 0, 0, 0.6); color: white; }
+  .navbar { background: rgba(0, 0, 0, 0.6); }
+}
+
+@media (prefers-color-scheme: light) {
+  .day.light-scheme   { background: white; color:  #555; }
+  .night.light-scheme { background:  #eee; color: black; }
+}
+
+.day, .night {
+  display: inline-block;
+  padding: 1em;
+  width: 7em;
+  height: 2em;
+  vertical-align: middle;
 }
