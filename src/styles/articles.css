@@ -1,0 +1,164 @@
+@font-face {
+    font-family: "Jost";
+    src: url("/fonts/Jost/TrueType/") format("truetype");
+    src: url("/fonts/Jost/OpenType/") format("opentype");
+
+    font-family: "Lora";
+    src: url("/fonts/Lora/TrueType/Lora-Regular.ttf") format("truetype");
+}
+
+/* background image */
+
+html {
+    background-image: url("/images/nexus-blitz.jpg");
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+body {
+    width: 100%;
+    margin: 0px;
+}
+
+h1 {
+    font-family: 'Lora', Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.header, .nav-links,
+h2,
+h3 {
+    font-family: 'Jost', Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+hr {
+    border: 0.2px #000 solid;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+p,
+li {
+    font-family: 'Jost', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+ul {
+    display: table;
+    margin: 10 auto;
+}
+
+/* link styling */
+
+a {
+    color: white;
+    font-weight: 750;
+}
+
+a:visited {
+    color: rgb(225, 99, 139);
+    padding: 0px 10px;
+    text-decoration: none;
+}
+
+a:visited:hover {
+    color: rgb(150, 67, 93);
+}
+
+a:link {
+    text-decoration: none;
+  }
+  
+a:hover {
+    text-decoration: underline;
+    color: rgb(255, 208, 208);
+}
+  
+a:active {
+    text-decoration: underline;
+}
+
+/* border around content */
+
+.container {
+    display: table;
+    max-width: 1000px;
+    min-height: 600px;
+    width: auto;
+    height: auto;
+    overflow: auto;
+    border: 3px #000 solid;
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+.nav-links {
+    font-family: 'Lora', Arial, sans-serif;
+    padding: 0px 10px;
+    font-size: 18px;
+}
+
+.navbar {
+    display: flex;
+    top: 0px;
+    background-color: rgba(98, 85, 85, 0.5);
+    width: 100%;
+    padding-top: 16px;
+}
+
+.center {
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.text-center {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.crest {
+    width: auto;
+    height: auto;
+    max-width: 150px;
+}
+
+section {
+    margin: 20px;
+}
+
+/* light and dark mode */
+
+.day   { background: #eee; color: black; }
+.night { background: #333; color: white; }
+
+@media (prefers-color-scheme: dark) {
+  .day.dark-scheme   { background:  #333; color: white; }
+  .night.dark-scheme { background: black; color:  #ddd; }
+  .container { background: rgba(0, 0, 0, 0.6); color: white; }
+  .navbar { background: rgba(0, 0, 0, 0.6); }
+}
+
+@media (prefers-color-scheme: light) {
+  .day.light-scheme   { background: white; color:  #555; }
+  .night.light-scheme { background:  #eee; color: black; }
+}
+
+.day, .night {
+  display: inline-block;
+  padding: 1em;
+  width: 7em;
+  height: 2em;
+  vertical-align: middle;
+}
