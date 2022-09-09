@@ -148,11 +148,13 @@ section {
   .night.dark-scheme { background: black; color:  #ddd; }
   .container { background: rgba(0, 0, 0, 0.6); color: white; }
   .navbar { background: rgba(0, 0, 0, 0.6); }
+  .pin { filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%); }
 }
 
 @media (prefers-color-scheme: light) {
   .day.light-scheme   { background: white; color:  #555; }
   .night.light-scheme { background:  #eee; color: black; }
+  .pin { filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(149deg) brightness(100%) contrast(104%); }
 }
 
 .day, .night {
