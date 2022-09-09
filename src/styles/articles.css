@@ -138,6 +138,12 @@ section {
     margin: 20px;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* light and dark mode */
 
 .day   { background: #eee; color: black; }
