@@ -148,6 +148,11 @@ a:active {
     height: auto;
 }
 
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
 /* light and dark mode */
 
 .day   { background: #eee; color: black; }
